@@ -1,0 +1,258 @@
+*{
+	font-family: calibri;
+}
+
+.container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+    .header{
+        width: 100%;
+        overflow: hidden;
+        height: 53px;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, blue, yellow);
+    }
+
+
+    .logo{
+        width: 10%;
+        float: left;
+        height: 50px;
+        padding: 2px;
+    }
+
+    .logo img{
+        height: 100%;
+        margin-left: 39%;
+        width: 60%;
+    }
+
+    .location{
+        text-align: center;
+        float: left;
+        width: 64%;
+        line-height: 1px;
+    }
+
+        header p{ 
+            font-size: 25px;
+            color: white;
+        }
+
+    .search{
+        width: 25%;
+        float: left;
+        height: 50px;
+        padding: 2px;
+    }
+
+        input{
+            float: left;
+            margin: 5px;
+            margin-right: 0px;
+            width: 70%;
+            height: 40px;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+
+        button{
+            float: left;
+            margin: 5px;
+            margin-left: 0px;
+            padding: 5px 10px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+
+    .infocontainer{
+        margin-top: 8px;
+        width: 100%;
+        height: 620px;
+    }
+
+        .Forecast {
+            float: left;
+            width: 40%;
+            height: 100% ;
+            border-radius: 50px 0px 0px 50px;
+            background-image: linear-gradient(to bottom right, #7FB3D5, yellow);
+        }
+
+            .current{
+                width: 100%;
+                height: 40%;
+            }
+
+        .currentreport{
+            height:60%;
+        }
+
+
+        .future{
+            width: 100%;
+            height: 60%;
+        }
+
+            .future nav { 
+                background-image: linear-gradient(to bottom right, #A9CCE3, yellow);
+                height: 40px;
+                
+                box-shadow: 30px;
+            }
+
+            .future a:link{
+                margin-right: 20px;
+                color: black;
+                font-weight: 300;
+                float: right;
+                padding: 8px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+
+        .Mapframe {
+            float: left;
+            width: 60%;
+            height: 100%;
+        }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+                border-radius: 0px 50px 50px 0px;
+            }
+
+        .temperature-value, .weather-icon{
+            width: 49%;
+            height:100%;
+            float: left;
+        }
+
+         /* Clear floats after the columns */
+		.current:after{
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+        .temperature-value p{
+            padding: 10px;
+            margin: 0;
+            color: #293251;
+            font-size: 5em;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .temperature-value span{
+            color: #293251;
+            font-size: 0.5em;
+        }
+
+        #currentWeather{
+            width: 17%;
+            height: 40%;
+            text-align: center;
+            padding: 3px;
+            float: left;
+            margin-left: 3px;
+        }
+
+#Weather{
+            width: 10%;
+            height: 40%;
+            padding: 3px;
+            float: left;
+            margin-left: 3px;
+        }
+
+        .temperature-description p{
+            padding: 8px;
+            margin: 0;
+            color: #293251;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+    
+        .daily{
+            width: 90%;
+            background-color: aqua;
+}
+
+details img {
+    width: 40px;
+    height: 40px;
+}
+
+details{
+	width: 95%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+details summary{
+	padding: 10px;
+}
+
+@media (max-width: 576px){
+    .header{
+        height: 50px;
+    }
+	.Forecast {
+		height: 50%;
+		width: 100%;
+	}
+    
+    .Mapframe {
+		height: 50%;
+		width: 100%;
+	}
+    
+    .currentreport{
+            width: 55.5%;
+            height:100%;
+            float: left;
+        }
+    
+    .display{
+            width: 44.5%;
+            height:100%;
+            float: left;
+        }
+    
+    .logo{
+        width: 0%;
+    }
+    
+    .location{
+        width: 50%;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    #currentWeather{
+        width: 48.5%;
+        height: 20%;
+        float: left;
+        margin-bottom: 18px;
+    }
+    
+    #currentWeather {
+        line-height: 0px;
+        padding: 0px;
+    }
+    
+    .infocontainer{
+    height: 650px;
+}
+}
